@@ -1,0 +1,15 @@
+/* Div 1 style */
+.div1{
+    height: 100px;
+    width: 100px;
+    background: gray;
+}
+
+.bold{
+    font-weight: 900;
+    color: red;
+}
+
+.radios{
+    font-weight: 100;
+}
