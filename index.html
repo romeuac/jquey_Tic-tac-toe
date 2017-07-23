@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="pt-br">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 
@@ -19,7 +19,83 @@
 
 	</head>
 
-	<body>
+	<body>		
+			
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header text-center ">
+					<h1>Tic-tac-toe game!</h1> 
+				</div>
+			</div>
+		</nav>
+
+		<div class="container area">
+			<div class="row">
+				<div class="col-xs-4">
+					<img src="img/jogador_1.png" class="img-responsive center-block">
+
+					<h4 style="margin-top: 15px">Player 1:</h4>
+					<input type="text" maxlength="10" class="center-block form-control" style="margin-top: 5px" placeholder="Name" id="ply1name">
+				</div>
+
+				<div class="col-xs-offset-1 col-xs-2 img_play" id="btn-iniciar">
+					<img src="img/iniciar.png" class="img-responsive center-block">
+				</div>
+
+				<div class="col-xs-offset-1 col-xs-4">
+					<img src="img/jogador_2.png" class="img-responsive center-block">
+
+					<h4 style="margin-top: 15px">Player 2:</h4>
+					<input type="text" maxlength="10" class="center-block form-control" style="margin-top: 5px" placeholder="Name" id="ply2name">
+				</div>
+			</div> <!-- /row -->
+
+			<div id="game_arena" style="display:none;">
+				<hr class="featurette-divider" style="margin-top: 45px; margin-bottom:0px;">
+
+				<h2 class="sub-header game_area">Game Area</h2>
+				<div class="row">
+					
+					<div class="col-xs-2 text-center">
+						<img src="img/jogador_1.png" class="img-responsive center-block">
+						<span id="name1">Player 1</span>
+					</div>
+
+					<div class="col-xs-offset-1 col-xs-6">
+						<div class="row">
+							<div class="col-xs-4 cell" id="c11">  </div>
+							<div class="col-xs-4 cell" id="c12"> </div>
+							<div class="col-xs-4 cell" id="c13"> </div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 cell" id="c21"> </div>
+							<div class="col-xs-4 cell" id="c22"> </div>
+							<div class="col-xs-4 cell" id="c23"> </div>
+						</div>
+						<div class="row">
+							<div class="col-xs-4 cell" id="c31"> </div>
+							<div class="col-xs-4 cell" id="c32"> </div>
+							<div class="col-xs-4 cell" id="c33"> </div>
+						</div>
+
+						<div class="row text-center">
+							<span id="endGame"></span>
+						</div>
+					</div>
+
+					<div class="col-xs-offset-1 col-xs-2 text-center">
+						<img src="img/jogador_2.png" class="img-responsive center-block">
+						<span id="name2">Player 2</span>
+					</div>				
+				</div><!-- /row -->
+			</div>
+		</div>
+
+		<hr class="featurette-divider" style="margin-top: 45px">
+		<!-- FOOTER -->
+		<footer>
+			<p class="text-center">2017 Design by RomeuAC</p>
+		</footer>
 
 	</body>
 </html>
